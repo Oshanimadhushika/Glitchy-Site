@@ -23,24 +23,27 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-import React from 'react';
-import ReactDOM from 'react-dom/client'; 
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client"; 
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import AppRouter from "./routes/AppRouter";
+import reportWebVitals from "./reportWebVitals";
 
-// Use createRoot for React 18
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create the React root
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppRouter />
     </BrowserRouter>
   </React.StrictMode>
 );
 
+// Reporting web vitals
 reportWebVitals();
+
 
 
 
