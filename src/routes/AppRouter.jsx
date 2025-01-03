@@ -3,18 +3,22 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import HomePage from "../pages/Home";
+import PhoneSec from "../pages/PhoneSec";
+
 
 
 const AppRouter = () => {
   return (
     <>
       <Navbar />
+      {/* <HomePage/>
+      <PhoneSec/> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* Uncomment these when other pages are ready */}
-        {/* <Route path="/about" element={<AboutPage />} /> */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        
+      
       </Routes>
+      
     </>
   );
 };
